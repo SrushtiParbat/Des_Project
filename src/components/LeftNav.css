@@ -1,0 +1,60 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* min-height: 100vh !important; */
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 #e9e7ec;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(94, 35, 100);;
+}
+.title2
+{
+    font-family: 'Climate Crisis', cursive;
+    color: #e9e7ec;
+    font-size: 22px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.items2
+{
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Raleway', sans-serif;
+    margin: 15px;
+    font-size: 18px;
+    color: #e8e6eb;
+}
+.icons2
+{
+    color: #e8e7eb;
+    font-size: 18px;
+    margin-left: 15px
+}
+.logo2
+{
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading
+{
+    background-color: rgb(207, 151, 202);
+    font-size: 15px;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Raleway', sans-serif;
+    margin: 15px;
+    padding-bottom: 0px;
+}
+
+.logout
+{
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Raleway', sans-serif;
+    margin: 15px;
+    font-size: 18px;
+    background-color: #10002B;
+    padding: 15px;
+}
