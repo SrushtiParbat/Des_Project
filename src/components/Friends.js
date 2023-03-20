@@ -58,7 +58,7 @@ const Friends = () => {
       <Card style={{ width: '30rem', height: '41rem', paddingTop: '20px'}}>
             <span className="square bg-primary rounded-9"></span>
             <Card.Body>
-            <Card.Title style={{ width: '25rem', height: '0.5rem'}}><FontAwesomeIcon className='icons2' icon={faUserGroup}style={{color:'black'}}/> Friends</Card.Title>
+            <Card.Title style={{ width: '25rem', height: '0.5rem', fontSize:'26px'}}><FontAwesomeIcon className='icons2' icon={faUserGroup}style={{color:'black'}}/> Friends</Card.Title>
             <Card.Text style={{width: '25rem', height: '5rem', padding: '30px'}}>
             <div className="friends-search">
                 <input

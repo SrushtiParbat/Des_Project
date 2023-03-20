@@ -7,22 +7,25 @@ import NotificationsList from './components/NotificationsList';
 import Logoutpop from './components/Logoutpop';
 import Transaction from './components/Transaction';
 import Friends from './components/Friends';
-// import AddExpensePage from './components/ExpensesPage';
+import AddExpensePage from './components/ExpensesPage';
+import Peer from './components/Peer';
 
 function App() {
   return (
-    // <div classname="sap">
-    //   <Sap/>
+      // <div classname="sap">
+      //  <Sap/>
       <div>
-        { <LeftNav/> }
+        <LeftNav/>
+        
         {/* <ReminderScreen/> */}
-        {/* <NotificationsList/> */}
+        <NotificationsList/>
         {/* <Logoutpop/> */}
         {/* <Transaction/> */}
-        <Friends/>
+        {/* <Friends/> */}
         {/* <AddExpensePage/> */}
+        {/* <Peer/> */}
       </div>
-    // </div>
+      //  </div>
     
   );
 }

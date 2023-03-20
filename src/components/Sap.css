@@ -1,6 +1,6 @@
 .container{
-    position: absolute;
-    left: 350px;
+    position: relative;
+    right: 500px;
 }
 
 .card {

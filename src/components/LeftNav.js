@@ -3,7 +3,7 @@ import './LeftNav.css'
 // import {Navbar, Nav} from 'react-bootstrap';
 import {Navbar, Nav} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faChartBar, faBell, faGear, faCalendarDays, faIndianRupee, faMoneyBillTransfer, faRightFromBracket, faUserGroup } from '@fortawesome/free-solid-svg-icons';
+import {faChartBar, faBell, faGear, faCalendarDays, faIndianRupee, faMoneyBillTransfer, faRightFromBracket, faUserGroup, faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 import dp from '../images/ProfilePicture.svg'
 
 
@@ -19,6 +19,7 @@ function LeftNav() {
                 <Nav className="d-md-block">
                     <Nav.Link className='heading'  href="#">ADMINISTRATION</Nav.Link>
                     <Nav.Link className='items mt-0 pt-0' href="/login"><FontAwesomeIcon className='icons2' icon={faChartBar} style={{color:'white'}}/><span className='items2'> Dashboard</span></Nav.Link>
+                    <Nav.Link className='items mt-0 pt-0' href="/login"><FontAwesomeIcon className='icons2' icon={faHandHoldingUsd} style={{color:'white'}}/><span className='items2'> Peer Lending</span></Nav.Link>
                     <Nav.Link className='heading ' href="#">MANAGEMENT</Nav.Link>
                     <Nav.Link className='items mt-0 pt-0' href="/login"><FontAwesomeIcon className='icons2' icon={faIndianRupee} style={{color:'white'}}/><span className='items2'> Add expenses</span></Nav.Link>
                     <Nav.Link className='items' href="/login"><FontAwesomeIcon className='icons2' icon={faMoneyBillTransfer}style={{color:'white'}}/><span className='items2'> Transactions</span></Nav.Link>

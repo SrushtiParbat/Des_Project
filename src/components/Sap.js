@@ -55,8 +55,8 @@ function Sap(){
                 <div classname="niche">
                 <Row>
                 <Col >
-                        <Card style={{ width: '41rem' }}
-                        >
+                        <Card style={{ width: '41rem', position:'absolute', top:'95px' }}>
+                        
                             <Card.Body>
                             <Card.Title>Monthly Expenditure</Card.Title>
                             <BarGraph/>
@@ -64,7 +64,7 @@ function Sap(){
                         </Card>
                     </Col>
                     <Col >
-                        <Card style={{ width: '25rem' }}>
+                        <Card style={{ width: '25rem', position:'absolute', top:'95px'}}>
                             <Card.Body>
                             <Card.Title>Account Details</Card.Title>
                               {/* <Card.Subtitle classname="mb-2 text-muted">
@@ -85,7 +85,7 @@ function Sap(){
                 <Row>
                 
                     <Col >
-                        <Card style={{ width: '41rem', height: '18rem'}}>
+                        <Card style={{ width: '41rem', height: '18rem', position:'relative', top:'400px'}}>
                             <Card.Body>
                             <Card.Title>Sectors</Card.Title>
                             <Pipi/>
@@ -93,7 +93,7 @@ function Sap(){
                         </Card>
                     </Col>
                     <Col >
-                        <Card style={{ width: '25rem', height: '18rem' }}>
+                        <Card style={{ width: '25rem', height: '18rem', position:'relative', top:'400px' }}>
                             <Card.Body>
                             <Card.Title>Upcoming Transactions</Card.Title>
                             {/* <ListGroup variant="flush">
