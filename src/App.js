@@ -9,6 +9,7 @@ import Transaction from './components/Transaction';
 import Friends from './components/Friends';
 import AddExpensePage from './components/ExpensesPage';
 import Peer from './components/Peer';
+import SavingsCalculator from './components/SavingsCalculator';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
         {/* <Logoutpop/> */}
         {/* <Transaction/> */}
         {/* <Friends/> */}
-        <AddExpensePage/>
-        {/* <Peer/> */}
+        {/* <AddExpensePage/> */}
+        <Peer/>
+        {/* <SavingsCalculator/> */}
       </div>
     // </div>
     

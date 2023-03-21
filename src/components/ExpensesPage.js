@@ -1,151 +1,10 @@
-// import React, { useState } from 'react';
-// import DatePicker from 'react-datepicker';
-// import 'react-datepicker/dist/react-datepicker.css';
-// import Card from 'react-bootstrap/Card';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {faIndianRupeeSign} from '@fortawesome/free-solid-svg-icons';
-// import { Container } from 'mdbreact';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-
-// const ExpensesPage = () => {
-//   const [title, setTitle] = useState('');
-//   const [amount, setAmount] = useState('');
-//   const [date, setDate] = useState(new Date());
-
-//    function handleKeypadClick(value) {
-//      setAmount(prevAmount => prevAmount + value);
-//    }
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     // handle form submission
-//   };
-
-//   return (
-//     <div classname="container">
-//       <Container>
-//         <Row>
-//           <Col>
-//       <Card style={{ width: '30rem', height: '42rem'}}>
-//           <span className="square bg-primary rounded-9"></span>
-//             <Card.Body>
-//             <Card.Title style={{ width: '15rem', height: '7rem',position:'relative', left:'95px', fontSize:'26px'}}><FontAwesomeIcon icon={faIndianRupeeSign} />  Add Expense</Card.Title>
-//             <Card.Text>
-//             <form onSubmit={handleSubmit}>
-//               <div><label htmlFor="title" style={{fontFamily:'cursive', fontSize:'20px'}}>Title</label></div>
-//               <input
-//                 type="text"
-//                 id="title"
-//                 value={title}
-//                 onChange={(e) => setTitle(e.target.value)}
-//               />
-
-//               <div><label htmlFor="amount" style={{fontFamily:'cursive', fontSize:'18px', paddingTop:'30px'}}>Amount</label></div>
-
-//               <input
-//                 type="text"
-//                 id="amount"
-//                 value={amount}
-//                 onChange={(e) => setAmount(e.target.value)}
-//               />
-//               <div>
-//               <label htmlFor="date" style={{fontFamily:'cursive', fontSize:'18px', paddingTop:'39px'}}>Date and Time</label>
-//               <DatePicker
-//                 selected={date}
-//                 onChange={(date) => setDate(date)}
-//                 showTimeSelect
-//                 timeFormat="HH:mm"
-//                 timeIntervals={15}
-//                 dateFormat=" yyyy/MM/dd      hh:mm aa"
-//               />
-              
-//               </div>
-              
-//               <div>
-//               <div><label htmlFor="category" style={{fontFamily:'cursive', fontSize:'18px', paddingTop:'40px',}}>Category</label></div>
-//               <select id="category">
-//                 <option value="food">Food</option>
-//                 <option value="shopping">Shopping</option>
-//                 <option value="travel">Travel</option>
-//                 <option value="medical">Medical</option>
-//                 <option value="others">Others</option>
-//               </select>
-//               </div>
-              
-//               <div><button type="submit" style={{paddingTop:'1px', backgroundColor:'purple', fontWeight:'bold', borderRadius:'4px', fontColor:'#ffffff', margin:'20px'}}>Add Expense</button></div>
-              
-//             </form>             
-//             </Card.Text>
-//             </Card.Body>
-//       </Card>
-//       </Col>
-//       <Col>
-//       <Card style={{ width: '30rem', height: '42rem', position:'absolute', right:'100px'}}>
-//           <span className="square bg-primary rounded-9"></span>
-//             <Card.Body>
-//             <Card.Title style={{ width: '15rem', height: '7rem',position:'relative', left:'95px', fontSize:'26px'}}><FontAwesomeIcon icon={faIndianRupeeSign} />  Add Income</Card.Title>
-//             <Card.Text>
-//             <form onSubmit={handleSubmit}>
-//               <div><label htmlFor="title" style={{fontFamily:'cursive', fontSize:'20px'}}>Title</label></div>
-//               <input
-//                 type="text"
-//                 id="title"
-//                 value={title}
-//                 onChange={(e) => setTitle(e.target.value)}
-//               />
-
-//               <div><label htmlFor="amount" style={{fontFamily:'cursive', fontSize:'18px', paddingTop:'30px'}}>Amount</label></div>
-
-//               <input
-//                 type="text"
-//                 id="amount"
-//                 value={amount}
-//                 onChange={(e) => setAmount(e.target.value)}
-//               />
-//               <div>
-//               <label htmlFor="date" style={{fontFamily:'cursive', fontSize:'18px', paddingTop:'39px'}}>Date and Time</label>
-//               <DatePicker
-//                 selected={date}
-//                 onChange={(date) => setDate(date)}
-//                 showTimeSelect
-//                 timeFormat="HH:mm"
-//                 timeIntervals={15}
-//                 dateFormat=" yyyy/MM/dd      hh:mm aa"
-//               />
-              
-//               </div>
-              
-//               <div>
-//               <div><label htmlFor="category" style={{fontFamily:'cursive', fontSize:'18px', paddingTop:'40px',}}>Category</label></div>
-//               <select id="category">
-//                 <option value="Home">Home</option>
-//                 <option value="Awards">Awards</option>
-//                 <option value="Salary">Salary</option>
-//                 <option value="Others">Others</option>
-//               </select>
-//               </div>
-              
-//               <div><button type="submit" style={{paddingTop:'1px', backgroundColor:'purple', fontWeight:'bold', borderRadius:'4px', fontColor:'#ffffff', margin:'20px'}}>Add Income</button></div>
-              
-//             </form>             
-//             </Card.Text>
-//             </Card.Body>
-//       </Card>
-//       </Col>
-//       </Row>
-//       </Container>
-//     </div>
-//   );
-// };
-
-// export default ExpensesPage;
-
-
 import React, {useState } from 'react';
 import './ExpensesPage.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import Card from 'react-bootstrap/Card';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faWallet} from '@fortawesome/free-solid-svg-icons';
 
 function ExpensesPage() {
     
@@ -158,9 +17,14 @@ function ExpensesPage() {
 
   return (
     <div className="App">
-      <div className="option-selector" >
+      <Card style={{ width: '30rem', height: '43rem'}}>
+        <span className="square bg-primary rounded-9"></span>
+          <Card.Body>
+          <Card.Title style={{ width: '25rem', height: '0.5rem', fontSize:'26px'}}><FontAwesomeIcon icon={faWallet} />  Money Manager</Card.Title>
+          <Card.Text style={{padding:'100px', fontSize:'18px'}}>
+          <div className="option-selector" style={{position:'relative', bottom:'60px'}}>
         
-        <label>
+        <label >
           <input
             type="radio"
             name="option"
@@ -181,10 +45,10 @@ function ExpensesPage() {
           Income
         </label>
       </div>
-      <div className="label-container">
+      <div className="label-container" style={{position:'relative', right:'135px', bottom:'70px'}}>
         {selectedOption === 'Expense' ? (
-          <div className="label Expense" style={{fontFamily:'cursive'}}>
-            <h2 > Add Expense</h2>
+          <div className="label Expense" style={{fontFamily:'cursive', height:'40px'}}>
+            <h2 style={{position:'relative', bottom:'15px', fontSize:'25px'}}> Add Expense</h2>
             <form>
               <label htmlFor="Title" style={{position:'relative', top:'15px'}}>Title:</label>
               <input
@@ -216,12 +80,12 @@ function ExpensesPage() {
                  <option value="others">Others</option>
                </select>
                </div>
-              <button type="submit" style={{backgroundColor:'purple', fontWeight:'bold', color:'white', position:'relative', top:'90px', borderRadius:'5px'}}>Add Expense</button>
+              <button type="submit" style={{backgroundColor:'purple', fontWeight:'bold', color:'white', position:'relative', top:'60px', borderRadius:'5px'}}>Add Expense</button>
             </form>
           </div>
         ) : (
-          <div className="label Income" style={{fontFamily:'cursive'}}>
-            <h2>Add Income</h2>
+          <div className="label Income" style={{fontFamily:'cursive', height:'40px'}}>
+            <h2 style={{position:'relative', bottom:'15px', fontSize:'25px'}}>Add Income</h2>
             <form>
               <label htmlFor="Title" style={{position:'relative', top:'15px'}}>Title:</label>
               <input
@@ -252,11 +116,15 @@ function ExpensesPage() {
                  <option value="Others">Others</option>
                </select>
                </div>
-              <button type="submit" style={{backgroundColor:'purple', fontWeight:'bold', color:'white', position:'relative', top:'90px', borderRadius:'5px'}}>Add Income</button>
+              <button type="submit" style={{backgroundColor:'purple', fontWeight:'bold', color:'white', position:'relative', top:'60px', borderRadius:'5px'}}>Add Income</button>
             </form>
           </div>
         )}
       </div>
+           </Card.Text>
+          </Card.Body>
+        </Card>
+      
     </div>
   );
 }
