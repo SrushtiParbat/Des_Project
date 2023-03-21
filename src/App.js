@@ -13,8 +13,8 @@ import SavingsCalculator from './components/SavingsCalculator';
 
 function App() {
   return (
-      // <div classname="sap">
-      //  <Sap/>
+      <div classname="sap">
+       <Sap/>
       <div>
         <LeftNav/>
         
@@ -24,10 +24,10 @@ function App() {
         {/* <Transaction/> */}
         {/* <Friends/> */}
         {/* <AddExpensePage/> */}
-        <Peer/>
+        {/* <Peer/> */}
         {/* <SavingsCalculator/> */}
       </div>
-    // </div>
+     </div>
     
   );
 }

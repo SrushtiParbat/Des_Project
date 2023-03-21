@@ -16,7 +16,7 @@ function Sap(){
     return(
         <div classname="container">
             <Container>
-                <div classname="upar">
+                <div classname>
                 <Row>
                     <Col > 
                         <Card style={{ width: '18rem', height: '5rem'}}>
@@ -32,9 +32,9 @@ function Sap(){
                     <Col > 
                         <Card style={{ width: '18rem', height: '5rem' }}>
                             <Card.Body>
-                            <Card.Title style={{ width: '15rem', height: '0.5rem'}}>Credit: <FontAwesomeIcon icon={faCreditCard} />  9</Card.Title>
+                            <Card.Title style={{ width: '15rem', height: '0.5rem', fontSize:'20px'}}>Credit: <FontAwesomeIcon icon={faCreditCard} />  9</Card.Title>
                             <Card.Text>
-                            
+                                
                             </Card.Text>
                             </Card.Body>
                         </Card>
@@ -44,7 +44,7 @@ function Sap(){
                             <Card.Body>
                             <Card.Title style={{ width: '15rem', height: '0.5rem'}}>Debit: <FontAwesomeIcon icon={faMoneyBillTransfer} />  8</Card.Title>
                             <Card.Text>
-                            
+                                
                             </Card.Text>
                             </Card.Body>
                         </Card>
@@ -52,7 +52,7 @@ function Sap(){
                     
                 </Row>
                 </div>
-                <div classname="niche">
+                <div classname>
                 <Row>
                 <Col >
                         <Card style={{ width: '41rem', position:'absolute', top:'95px' }}>
