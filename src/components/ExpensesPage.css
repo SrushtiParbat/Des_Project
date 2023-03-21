@@ -84,9 +84,9 @@ select {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   margin-bottom: 10px;
-}
+}*/
 
-.button {
+/* .button {
   padding: 10px;
   background-color: #1a1717;
   border: none;
@@ -137,5 +137,5 @@ button:disabled:active {
 
 button:disabled:focus-visible {
   box-shadow: none;
-} */
-
+}  */
+ 

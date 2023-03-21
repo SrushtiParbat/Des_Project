@@ -2,7 +2,7 @@
     padding-top: 10px;
     position: absolute;
     left: 680px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .transaction-history-card {
     display: flex;

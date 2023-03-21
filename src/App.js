@@ -12,8 +12,8 @@ import Peer from './components/Peer';
 
 function App() {
   return (
-      <div classname="sap">
-       <Sap/>
+      // <div classname="sap">
+      //  <Sap/>
       <div>
         <LeftNav/>
         
@@ -22,10 +22,10 @@ function App() {
         {/* <Logoutpop/> */}
         {/* <Transaction/> */}
         {/* <Friends/> */}
-        {/* <AddExpensePage/> */}
+        <AddExpensePage/>
         {/* <Peer/> */}
       </div>
-    </div>
+    // </div>
     
   );
 }
